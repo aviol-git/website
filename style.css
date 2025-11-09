@@ -90,6 +90,25 @@ header {
     text-decoration: underline;
 }
 
+.profile-pic {
+  display: block;
+  width: 220px;         /* adjust as needed */
+  height: auto;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  image-rendering: -webkit-optimize-contrast; /* crisper on WebKit */
+}
+
+/* Safety net: prevent inherited styles from re-adding frames */
+.sidebar img {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
 .content {
     width: 70%;
     padding: 40px;
